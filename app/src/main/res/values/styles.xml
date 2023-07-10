@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/box_background</item> <!-- 배경 스타일을 box_background로 지정 -->
+    </style>
+</resources>

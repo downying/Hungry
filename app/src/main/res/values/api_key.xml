@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="naver_client_ID">ekfhcw3c0o</string>
+    <string name="naver_search_client_ID"></string>
+    <string name="naver_search_client_secret"></string>
+</resources>
