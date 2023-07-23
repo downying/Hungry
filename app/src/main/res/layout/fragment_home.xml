@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.399" />
 
+
     <Button
         android:id="@+id/btnRest"
         android:layout_width="wrap_content"
@@ -35,30 +36,89 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/tvFranchiseText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/drawable_resize_house"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="내 주변 사용 가능한 가맹점을 조회할 수 있어요!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/btnFranchise"
+        app:layout_constraintTop_toBottomOf="@id/btnFranchise" />
+
+    <TextView
+        android:id="@+id/tvFranchiseText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/drawable_resize_heart"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="내 주변 이용 가능한 청소년 쉼터를 조회할 수 있어요!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/btnRest"
+        app:layout_constraintTop_toBottomOf="@id/btnRest" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarLayout"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/ricerestskyblue"
+        android:background="#9BCFF8"
         tools:ignore="MissingConstraints"
         android:gravity="center">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="밥, 쉼"
-            android:textColor="@color/black"
-            android:textSize="45sp"
-            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:gravity="center"
             app:layout_constraintVertical_bias="0.5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drawable_resize_rice"
+                android:contentDescription="Rice Image"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="밥, 쉼"
+                android:textColor="@color/black"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="30dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/couple"
+                android:contentDescription="Couple Image"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
