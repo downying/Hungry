@@ -35,6 +35,7 @@ class HomeFragment : Fragment() {
             transaction.commit()
         }
 
+
         return binding.root
     }
 }
